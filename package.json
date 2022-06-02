@@ -3,7 +3,7 @@
   "version": "1.0.5",
   "description": "beta tioanime scraper module.",
   "type": "module",
-  "main": "dist/index.js",
+  "main": "dist/index.d.ts",
   "types": "dist/types.d.ts",
   "scripts": {
     "build": "rm -rf && tsc",
