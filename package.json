@@ -1,6 +1,6 @@
 {
   "name": "tioanime-scraper-beta",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "beta tioanime scraper module.",
   "type": "module",
   "main": "dist/index.d.ts",
