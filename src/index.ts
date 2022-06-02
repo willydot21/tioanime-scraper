@@ -26,7 +26,7 @@ import {
   Filters, FiltersResult,
   AnimeProgramming, 
   AnimeProgrammingItem,
-  ObjectDef} from './types';
+  ObjectDef } from './types';
 
 import {JSDOM} from 'jsdom';
 
@@ -524,3 +524,16 @@ class Tioanime_scraper {
 }
 
 export default Tioanime_scraper;
+export {
+  Routes, AnimeInfo, 
+  TioanimeError, ErrorTypes, 
+  AnimeLinks, AnimeReleated,
+  ArticleItem, AnimeSearch,
+  SectionItem,
+  AnimeLatestOptions, 
+  AnimeAllLatest,
+  Filters, FiltersResult,
+  AnimeProgramming, 
+  AnimeProgrammingItem,
+  ObjectDef 
+}

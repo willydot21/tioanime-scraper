@@ -115,3 +115,5 @@ export interface TioanimeError {
 export interface ErrorTypes {
   [error_name: string]: TioanimeError;
 }
+
+// 16

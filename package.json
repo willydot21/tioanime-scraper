@@ -4,7 +4,6 @@
   "description": "beta tioanime scraper module.",
   "type": "module",
   "main": "dist/index.d.ts",
-  "types": "dist/types.d.ts",
   "scripts": {
     "build": "rm -rf && tsc",
     "test": "tsc && node dist/test.js"
