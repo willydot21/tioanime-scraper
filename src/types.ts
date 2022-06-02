@@ -35,7 +35,9 @@ export interface AnimeReleated {
 }
 
 export interface AnimeLinks {
-  [server_name: string]: Array[string]
+  links: ObjectDef;
+  id: string;
+  chapter: number;
 }
 
 export interface ArticleItem {
@@ -54,15 +56,15 @@ export interface SectionItem {
 }
 
 export interface AnimeAllLatest {
-  movies: AnimeFromSection[];
-  ovas: AnimeFromSection[];
-  specials: AnimeFromSection[];
-  animes: AnimeArticle[];
-  chapters: AnimeArticle[];
+  movies: ArticleItem[];
+  ovas: SectionItem[];
+  specials: SectionItem[];
+  animes: ArticleItem[];
+  chapters: ArticleItem[];
 }
 
 export interface AnimeSearch {
-  anime_results: AnimeArticle[];
+  anime_results: ArticleItem[];
   page: number;
   total_pages: number;  
 }

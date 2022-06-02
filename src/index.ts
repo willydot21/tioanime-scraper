@@ -25,7 +25,8 @@ import {
   AnimeAllLatest,
   Filters, FiltersResult,
   AnimeProgramming, 
-  AnimeProgrammingItem} from './types';
+  AnimeProgrammingItem,
+  ObjectDef} from './types';
 
 import {JSDOM} from 'jsdom';
 
@@ -229,8 +230,8 @@ class Tioanime_scraper {
   static async getAnimeChapter(id:string, chapter:number): Promise<AnimeLinks | TioanimeError> {
 
     var 
-      links: AnimeLinks = {},
-      download_links: AnimeLinks = {};
+      links: ObjectDef = {},
+      download_links: ObjectDef = {};
 
     const this_ = Tioanime_scraper;
 

@@ -1,6 +1,6 @@
 
 import scraper from "./index.js";
-import { Filters } from "./types.js";
+import { Filters } from "./types";
 
 const test_req: Array<string> = [
   'naruto',

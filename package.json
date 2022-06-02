@@ -3,11 +3,11 @@
   "version": "1.0.1",
   "description": "beta tioanime scraper module.",
   "type": "module",
-  "main": "build/index.js",
-  "types": "src/types.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/types.d.ts",
   "scripts": {
-    "build": "tsc",
-    "test": "tsc && node ./build/test.js"
+    "build": "rm -rf && tsc",
+    "test": "tsc && node dist/test.js"
   },
   "keywords": [],
   "author": "willydot21",
