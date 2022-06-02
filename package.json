@@ -1,9 +1,10 @@
 {
-  "name": "tioanime-scraper",
+  "name": "tioanime-scraper-beta",
   "version": "1.0.0",
-  "description": "tioanime scraper module.",
-  "main": "./build/index.js",
+  "description": "beta tioanime scraper module.",
   "type": "module",
+  "main": "build/index.js",
+  "types": "src/types.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "tsc && node ./build/test.js"
