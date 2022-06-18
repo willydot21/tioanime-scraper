@@ -68,7 +68,11 @@ class Tioanime_scraper {
   /** 
     * @param {[string]} url url of query.
     * @returns 
+<<<<<<< HEAD
     * html jsdom document.
+=======
+    * html cheerio document.
+>>>>>>> 7aa23c7 (fix image src on article item  getter)
     */
   static async getDocument(url:string): Promise<JSDOM> {
     const res = await fetch(url);

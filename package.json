@@ -1,9 +1,10 @@
 {
   "name": "tioanime-scraper-v1",
-  "version": "0.0.11",
+  "version": "1.0.11",
   "description": "beta tioanime scraper module.",
   "type": "module",
   "main": "dist/index.js",
+  "repository": "https://github.com/willydot21/tioanime-scraper",
   "scripts": {
     "build": "rm -rf && tsc",
     "test": "tsc && node dist/test.js"

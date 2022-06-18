@@ -163,7 +163,7 @@ function handlerGetSectionItem(doc: Document, section_name:string): SectionItem[
       name: handlerGetHtml(article.querySelector('.media-body a h3')),
       id: handlerGetAttrib(a, 'href').split('/')[2],
       type: handlerGetHtml(article.querySelector('.thumb span')),
-      poster: handlerGetAttrib(article.querySelector('.thumb a figure img'),'src'),
+      poster: 'https://tioanime.com' + handlerGetAttrib(article.querySelector('.thumb a figure img'),'src'),
       description: handlerTextParser(dsc_to_parse),
       genres,
     })
