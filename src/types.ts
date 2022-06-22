@@ -15,6 +15,7 @@ export interface AnimeInfo {
   malId: string;
   anime_id: string;
   chapters: number;
+  episodePoster: string;
   poster: string;
   season: string;
   banner: string;
@@ -56,7 +57,7 @@ export interface SectionItem {
 }
 
 export interface AnimeAllLatest {
-  movies: ArticleItem[];
+  movies: SectionItem[];
   ovas: SectionItem[];
   specials: SectionItem[];
   animes: ArticleItem[];

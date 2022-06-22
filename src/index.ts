@@ -68,11 +68,8 @@ class Tioanime_scraper {
   /** 
     * @param {[string]} url url of query.
     * @returns 
-<<<<<<< HEAD
     * html jsdom document.
-=======
     * html cheerio document.
->>>>>>> 7aa23c7 (fix image src on article item  getter)
     */
   static async getDocument(url:string): Promise<JSDOM> {
     const res = await fetch(url);
@@ -184,7 +181,7 @@ class Tioanime_scraper {
       // get whatever values ​​there are.
 
       const anime_info: AnimeInfo = {
-        name: handlerGetHtml( doc.querySelector('.title') ), 
+        name: handlerGetText( doc.querySelector('.title') ), 
 
         anime_id,
 
@@ -194,9 +191,11 @@ class Tioanime_scraper {
 
         banner: poster.replace('portadas', 'fondos'),
 
+        episodePoster: poster.replace('portadas', 'thumbs'),
+
         genres,
 
-        synopsis: handlerTextParser( handlerGetHtml(p_synopsis) ),  
+        synopsis: handlerTextParser( handlerGetText(p_synopsis) ),  
 
         chapters,
 

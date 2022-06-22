@@ -13,10 +13,12 @@
   "author": "willydot21",
   "license": "ISC",
   "dependencies": {
+    "he": "^1.2.0",
     "jsdom": "19.0.0",
     "node-fetch": "3.2.4"
   },
   "devDependencies": {
+    "@types/he": "^1.1.2",
     "@types/jsdom": "16.2.14",
     "@types/node": "17.0.38",
     "@types/node-fetch": "2.6.1",

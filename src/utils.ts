@@ -1,4 +1,6 @@
 
+import he from 'he';
+
 import { 
   AnimeLatestOptions, 
   AnimeAllLatest, 
@@ -69,7 +71,8 @@ function handlerTextParser(text: string): string {
   // if text variable has spaces at the beginning
   // or at the end, then remove it.
 
-  return result;
+  return he.decode(result);
+  
 }
 
 /**
