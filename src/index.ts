@@ -376,7 +376,7 @@ class Tioanime_scraper {
     // if 'page' value passed greater than total pages
     // returns error.
 
-    const result: AnimeSearch = { anime_results: items, page, total_pages }
+    const result: AnimeSearch = { query, anime_results: items, page, total_pages }
 
     return result;
 

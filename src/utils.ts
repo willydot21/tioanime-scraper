@@ -129,7 +129,7 @@ function handlerGetArticleItem(doc: Document, article_class:string): ArticleItem
       const href: string = handlerGetAttrib(article.querySelector('a'), 'href');
       const id: string = href.split('/')[2];
       const poster: string = handlerGetAttrib(article.querySelector('.thumb figure img'), 'src');
-      const name: string = handlerGetHtml(article.querySelector('a h3'));
+      const name: string = handlerGetText(article.querySelector('a h3'));
       items.push({
         name, id, poster: 'https://tioanime.com'+poster
       });
