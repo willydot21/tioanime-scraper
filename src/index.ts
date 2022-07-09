@@ -119,8 +119,8 @@ class Tioanime_scraper {
 
       const scripts: NodeListOf<Element> = doc.querySelectorAll('script');
       
-      const ep_no_parsed: string = scripts[16].innerHTML;
-      // script tag html (javascript code as string).
+      const ep_no_parsed: string = scripts.item(scripts.length-1).innerHTML;
+      // last script tag html (javascript code as string).
 
       const match: RegExpMatchArray | null = ep_no_parsed.match(/episodes =/); 
 
@@ -133,13 +133,13 @@ class Tioanime_scraper {
       }
       // get array of chapters and take first.
 
-      const mId_no_parsed: string = scripts[15].innerHTML;
+      const mId_no_parsed: string = scripts.item(scripts.length-2).innerHTML;
 
       const mal_link: string =  mId_no_parsed.slice(
         mId_no_parsed.indexOf("'")+1,
         mId_no_parsed.indexOf(')')-1
       );
-      // get api jikan link.
+      // get api jikan link from penultimate link.
 
       // In a nutshell, you are getting important labels 
       // and then finding their values.
