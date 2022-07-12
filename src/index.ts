@@ -256,7 +256,8 @@ class Tioanime_scraper {
 
 
     // get to watch links ----------------
-    const content: string = doc.querySelectorAll('script')[16].innerHTML;
+    const scripts = doc.querySelectorAll('script');
+    const content: string = scripts.item(scripts.length-1).innerHTML;
 
     const parse: string[][] = JSON.parse(
       content.slice(
